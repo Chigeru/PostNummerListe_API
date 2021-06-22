@@ -1,39 +1,76 @@
 :root {
-    --colorFirst: lightgray;
-    --colorSecond:#dbdbdb;
-    --colorShadow: gray;
+    --colorFirst: #e6e6e6;
+    --colorSecond:#e9eeff;
+    --colorShadow: #808080;
 }
 html {
     margin: 0;
-    background-color: var(--colorFirst);
 }
 body {
     margin: 0;
+    height: 100%;
 }
 .holder {
-    width: auto;
-    text-align: center;
+    padding: 200px 0 200px 0;
+    margin: 0 auto 0 auto;
+    background-image: url(Location-map.png);
 }
-input {
-    width: 100px;
+.holder div {
+    margin: auto;
+    text-align: center;
+    background-color: var(--colorFirst);
     padding: 5px;
-    
+    width: 400px;
+    box-shadow: 0 0 50px var(--colorShadow);
+}
+.holder div h5 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 0 0 0;
+    color: navy;
+}
+.holder div form input {
+    width: 365px;
+    padding: 15px;
+    border-color: var(--colorSecond);
 }
 
+.indhold {
+    width: 400px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.indhold div:nth-child(2) {
+    width: 200px;
+    text-align: right;
+}
+
+.list {
+    width: 400px;
+    margin: 0 auto 30px auto;
+}
 
 .zipListUnit {
-    background-color: var(--colorSecond);
     transition: .5s all;
-    padding: 5px;
-    border-radius: 15px;
-    margin: 1em 40px 0 40px;
-    box-shadow: 5px 5px 10px var(--colorShadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid var(--colorFirst);
 }
+
+
 .zipListUnit div {
+    width: 150px;
     font-size: small;
-    color: #adadad;
+    color: #3a3a3a;
 }
+
 .zipListUnit:hover {
-    background-color: lightsteelblue;
+    background-color: var(--colorSecond);
     transition-delay: 0s;
 }
