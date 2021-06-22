@@ -1,0 +1,39 @@
+:root {
+    --colorFirst: lightgray;
+    --colorSecond:#dbdbdb;
+    --colorShadow: gray;
+}
+html {
+    margin: 0;
+    background-color: var(--colorFirst);
+}
+body {
+    margin: 0;
+}
+.holder {
+    width: auto;
+    text-align: center;
+}
+input {
+    width: 100px;
+    padding: 5px;
+    
+}
+
+
+.zipListUnit {
+    background-color: var(--colorSecond);
+    transition: .5s all;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 1em 40px 0 40px;
+    box-shadow: 5px 5px 10px var(--colorShadow);
+}
+.zipListUnit div {
+    font-size: small;
+    color: #adadad;
+}
+.zipListUnit:hover {
+    background-color: lightsteelblue;
+    transition-delay: 0s;
+}
